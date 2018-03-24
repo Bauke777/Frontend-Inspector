@@ -1,0 +1,50 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+body {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/background-center.png");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: top center;
+  height: 100vh;
+}
+
+.left-panel {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/background-left.png");
+  background-size: 100%;
+  width: 256px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.center-panel {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/background-center.png");
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 256px;
+  right: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.right-panel {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/background-right.png");
+  background-size: 100%;
+  width: 230px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+iframe {
+  margin: auto;
+  border: 0;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.60);
+  background: #fff;
+  width: calc(80vw - 486px);
+  height: 80vh;
+}
